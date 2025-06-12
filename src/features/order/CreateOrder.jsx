@@ -97,8 +97,6 @@ export async function action({ request }) {
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
 
-  console.log("create..........", data);
-
   const order = {
     ...data,
     cart: JSON.parse(data.cart),

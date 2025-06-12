@@ -13,8 +13,6 @@ import {
 function Order() {
   const order = useLoaderData();
 
-  console.log(order);
-
   // Here we are not adding the customer's name and mobile no., only restaurant staff will have access to those values.
   const {
     id,
